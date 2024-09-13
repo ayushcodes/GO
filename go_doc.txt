@@ -1,0 +1,63 @@
+slice append function returns a new slice
+
+array vs slice
+
+new type inside inside go:=  type deck []string
+
+take existing type and extened it's functionality
+
+receiver functions are just method od custom types 
+
+int to str strconv.Itoa(i)
+
+converting to byte []byte(a)
+
+ioutil.WriteFile(filename, []byte(d.toString()), 0666) ---> write to a file.
+
+byte to string or slice of string strings.Split(string(bs), ",")
+
+generate a random number rand.Intn(len(d)-1)
+
+seed with random number 
+
+structs
+
+	alex := person{"alex", "anderson"}
+	fmt.Println(alex)
+	ayush := person{firstName: "ayush", lastName: "garg"}
+	fmt.Println(ayush)
+
+	var a person
+	a.firstName = "sdvdsvdsvs"
+	fmt.Println(a)
+	fmt.Printf("%+v",a)
+
+
+func (pointerToPerson *person) updateName(newFirstName string) {
+	(*pointerToPerson).firstName = newFirstName
+}
+
+pointerToPerson *person  -->  pointer to a person
+
+(*pointerToPerson)  --> value of the pointer
+
+slice pass by referernce
+
+referernce type :- slice, map, channles, pointers, functions
+
+value types :- int, float, string, bool, structs
+
+Maps:- 
+
+	colors := map[string]string{
+		"red":"r",
+		"green":"3268476234",
+	}
+	fmt.Printf("%+v", colors)
+	delete(colors, "red")
+	var test map[string]string
+	test2 := make(map[string]string)
+	fmt.Println(test,test2)
+
+
+bs := make([]byte, 99999)  byte with size 9999999
