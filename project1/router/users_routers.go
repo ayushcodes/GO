@@ -7,7 +7,7 @@ import (
 )
 
 func registerUserRouters(r *gin.Engine) {
-	userRouters := r.Group("/user")
+	userRouters := r.Group("/user/:id")
 
 	userRouters.GET("/", handlers.GetUser)
 }

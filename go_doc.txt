@@ -1,4 +1,18 @@
-slice append function returns a new slice
+# slice append function returns a new slice
+
+-- slice has 3 value pointer to array, the lenght, the capacity
+-- append reallocation only works when length increased from capacity
+-- remove from ith index append(numbers[:i], numbers[i+1:]...)
+-- add at ith index append(numbers[:i], append([]int{x}, numbers[i:]...)...)
+-- empty the slice numbers = numbers[:0]
+-- sort a slice sort.Ints(numbers)
+
+# Interface 
+
+## 1. Interface Embedding
+## 2. Nil Interfaces
+## 3. Type Assertions
+
 
 array vs slice
 
@@ -61,3 +75,19 @@ Maps:-
 
 
 bs := make([]byte, 99999)  byte with size slice 9999999
+
+bson
+
+json
+
+channels 
+
+context
+
+gin.context
+
+headers
+
+interfaces
+
+generics
